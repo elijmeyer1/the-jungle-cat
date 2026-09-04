@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | The Jungle Cat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Caveat:wght@500;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<div class="header-light">
+  <header>
+    <a href="index.html" class="logo">
+      <div class="brand-top">THE</div>
+      <div class="brand-main">JUNGLE CAT</div>
+      <div class="brand-sub">GAINESVILLE FL</div>
+    </a>
+    <nav id="mainNav">
+      <a href="index.html#stay">STAY</a>
+      <a href="index.html#about">ABOUT</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="index.html#experience">EXPERIENCES</a>
+      <a href="index.html#reviews">REVIEWS</a>
+      <a href="index.html#contact">CONTACT</a>
+    </nav>
+    <a class="btn btn-olive" id="bookBtnTop" href="index.html#stay">BOOK YOUR STAY</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </header>
+</div>
+
+<!-- ===== GALLERY ===== -->
+<section class="gallery-page-hero">
+  <span class="script">The Jungle Cat</span>
+  <h1>GALLERY</h1>
+</section>
+
+<section class="full-gallery">
+  <div class="full-gallery-grid" id="fullGalleryGrid"></div>
+  <p class="full-gallery-empty" id="fullGalleryEmpty">Gallery images coming soon.</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer id="contact">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo">
+        <div class="brand-top">THE</div>
+        <div class="brand-main">JUNGLE CAT</div>
+        <div class="brand-sub">GAINESVILLE FL</div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>QUICK LINKS</h5>
+      <a href="index.html#stay">Stay</a>
+      <a href="index.html#about">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#experience">Experiences</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h5>FOLLOW ALONG</h5>
+      <p>See more jungle vibes and guest adventures.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H8v3h3v7h3v-7h3l1-3h-4V9c0-.5.3-1 1-1Z"/></svg></a>
+        <a href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 17c1-3 1.5-5.5 2-8a2.5 2.5 0 1 1 3 2c-.3 1.5-.6 3-2 3-1.2 0-1.5-1-1.2-2"/></svg></a>
+      </div>
+      <p style="margin-top:14px;">@thejunglecat_airbnb</p>
+    </div>
+    <div class="badge">
+      <svg viewBox="0 0 200 200">
+        <defs>
+          <path id="badgeTopArc2" d="M 30,100 A 70,70 0 0 1 170,100"/>
+          <path id="badgeBottomArc2" d="M 42,150 A 70,70 0 0 0 158,150"/>
+        </defs>
+        <circle cx="100" cy="100" r="92" fill="none" stroke="rgba(242,237,226,0.4)" stroke-width="1"/>
+        <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(242,237,226,0.4)" stroke-width="1"/>
+        <text font-family="Jost, sans-serif" font-size="13" letter-spacing="3" fill="#f2ede2">
+          <textPath href="#badgeTopArc2" startOffset="50%" text-anchor="middle">STAY WILD</textPath>
+        </text>
+        <text font-family="Jost, sans-serif" font-size="13" letter-spacing="3" fill="#f2ede2">
+          <textPath href="#badgeBottomArc2" startOffset="50%" text-anchor="middle">LIVE INSPIRED</textPath>
+        </text>
+        <g transform="translate(100,100)" stroke="#f2ede2" stroke-width="2" fill="none">
+          <path d="M0,-22 C-16,-10 -16,10 0,24 C16,10 16,-10 0,-22 Z"/>
+          <path d="M0,-18 V22"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 The Jungle Cat. All rights reserved.</span>
+    <span>Gainesville, FL</span>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('mainNav');
+  toggle.addEventListener('click', () => nav.classList.toggle('open'));
+  document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+
+  // ===== GALLERY IMAGES =====
+  // Add the filenames of images placed in images/gallery/ to this list
+  // (in the order you want them to appear). The grid and the
+  // "coming soon" message below update automatically.
+  const galleryImages = [
+    // "images/gallery/photo-01.jpg",
+    // "images/gallery/photo-02.jpg",
+  ];
+
+  const grid = document.getElementById('fullGalleryGrid');
+  const empty = document.getElementById('fullGalleryEmpty');
+
+  if (galleryImages.length) {
+    empty.style.display = 'none';
+    galleryImages.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = `The Jungle Cat gallery photo ${i + 1}`;
+      img.loading = 'lazy';
+      grid.appendChild(img);
+    });
+  }
+</script>
+
+</body>
+</html>
