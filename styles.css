@@ -155,6 +155,7 @@
   .gallery{display:grid; grid-template-columns:1fr 1fr; grid-template-rows:1fr 1fr;}
   .gallery-item{position:relative; overflow:hidden; min-height:220px;}
   .gallery-item img{width:100%; height:100%; object-fit:cover; position:absolute; inset:0;}
+  .gallery-item-mobile-only{display:none;}
 
   /* ===== EXPERIENCE / BOOK ===== */
   .experience{display:grid; grid-template-columns:1fr 1fr;}
@@ -254,6 +255,7 @@
     .footer-grid{grid-template-columns:1fr;}
     .gallery{grid-template-columns:1fr;}
     .gallery-item{min-height:auto; aspect-ratio:4/3;}
+    .gallery-item-mobile-only{display:block;}
     .welcome-text{padding:48px 24px;}
     .welcome-text .script{font-size:2.4rem;}
     .welcome-text h2{font-size:2rem;}
