@@ -214,11 +214,18 @@
     nav{display:none;}
     nav.open{
       display:block; position:absolute; top:100%; left:0; right:0; margin:0;
-      padding:14px 24px; z-index:5; text-align:center;
+      padding:10px 24px; z-index:5; text-align:center;
     }
     nav.open .nav-gallery{display:inline-block;}
     nav.open .nav-gallery-text{display:none;}
-    nav.open .nav-gallery-leaf{display:block; width:190px; max-width:100%; height:auto; margin:0 auto;}
+    nav.open .nav-gallery-leaf{
+      display:block; width:220px; max-width:100%; height:auto; margin:0 auto;
+      opacity:0; animation:navLeafFadeIn 1s ease forwards;
+    }
+    @keyframes navLeafFadeIn{
+      from{opacity:0;}
+      to{opacity:1;}
+    }
     .nav-toggle{display:block;}
     header .btn-olive{display:none;}
     .experience{grid-template-columns:1fr;}
