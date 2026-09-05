@@ -219,8 +219,8 @@
     nav.open .nav-gallery{display:inline-block;}
     nav.open .nav-gallery-text{display:none;}
     nav.open .nav-gallery-leaf{
-      display:block; width:220px; max-width:100%; height:auto; margin:0 auto;
-      opacity:0; animation:navLeafFadeIn 1s ease forwards;
+      display:block; width:235px; max-width:100%; height:auto; margin:0 auto;
+      opacity:0; animation:navLeafFadeIn 1.2s ease forwards;
     }
     @keyframes navLeafFadeIn{
       from{opacity:0;}
