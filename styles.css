@@ -251,6 +251,12 @@
   }
 
   /* ===== FULL GALLERY PAGE ===== */
+  .exp-right-full{
+    min-height:52vh;
+    align-items:center;
+    text-align:center;
+  }
+  .exp-right-full p{margin-left:auto; margin-right:auto;}
   .hero-gallery{
     min-height:38vh;
   }
