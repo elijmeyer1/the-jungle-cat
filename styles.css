@@ -91,7 +91,7 @@
   .logo .brand-sub{font-size:0.65rem; letter-spacing:0.25em; opacity:0.75; display:flex; align-items:center; gap:8px; margin-top:2px;}
   .logo .brand-sub::before, .logo .brand-sub::after{content:""; width:14px; height:1px; background:currentColor; opacity:0.6;}
   nav{display:flex; align-items:center; justify-content:center; gap:22px; flex:1; min-width:0; margin-left:16px;}
-  nav a{font-size:0.68rem; letter-spacing:0.1em; font-weight:400; opacity:0.92; white-space:nowrap; text-shadow:0 1px 6px rgba(0,0,0,0.4);}
+  nav a{font-size:0.85rem; letter-spacing:0.1em; font-weight:400; opacity:0.92; white-space:nowrap; text-shadow:0 1px 6px rgba(0,0,0,0.4);}
   nav a:hover{opacity:1;}
   .nav-toggle{display:none; background:none; border:none; color:var(--cream); cursor:pointer; flex:0 0 auto;}
   header .btn-olive{flex:0 0 auto; white-space:nowrap;}
@@ -185,6 +185,7 @@
   .footer-col a, .footer-col p{
     display:block; font-size:0.85rem; font-weight:300; opacity:0.85; margin-bottom:10px; line-height:1.6;
   }
+  .footer-col a{font-size:1rem;}
   .socials{display:flex; gap:12px; margin-top:14px;}
   .socials a{
     width:34px; height:34px; border:1px solid rgba(242,237,226,0.35); border-radius:50%;
