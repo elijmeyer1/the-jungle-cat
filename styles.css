@@ -127,13 +127,12 @@
   }
   .welcome-text{
     position:relative;
-    background:var(--cream-warm);
+    background:var(--cream-warm) url('images/welcome-leaf.png') center/cover no-repeat;
     padding:80px 60px;
     display:flex; flex-direction:column; justify-content:center;
     overflow:hidden;
   }
   .welcome-text > *{position:relative;}
-  .welcome-leaf-deco{position:absolute; inset:0; z-index:0; pointer-events:none;}
   .welcome-text .script{font-size:2.8rem; color:var(--olive-dark); margin-bottom:2px;}
   .welcome-text h2{font-size:2.3rem; line-height:1.15; margin-bottom:4px;}
   .welcome-text .loc{font-size:0.78rem; letter-spacing:0.2em; color:#5c6650; margin-bottom:18px;}
