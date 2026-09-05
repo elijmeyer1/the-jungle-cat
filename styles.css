@@ -186,12 +186,17 @@
     display:block; font-size:0.85rem; font-weight:300; opacity:0.85; margin-bottom:10px; line-height:1.6;
   }
   .footer-col a{font-size:1rem;}
-  .socials{display:flex; gap:12px; margin-top:14px;}
+  .socials{display:flex; align-items:center; gap:12px; margin-top:14px;}
   .socials a{
     width:34px; height:34px; border:1px solid rgba(242,237,226,0.35); border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
+    display:flex; align-items:center; justify-content:center; flex:0 0 auto;
   }
   .socials svg{width:15px; height:15px; stroke:var(--cream); fill:none; stroke-width:1.4;}
+  .socials a.social-handle{
+    width:auto; height:auto; border:none; border-radius:0;
+    font-size:0.85rem; font-weight:300; opacity:0.85;
+  }
+  .socials a.social-handle:hover{opacity:1;}
   .badge{
     width:112px; height:112px;
     display:flex; align-items:center; justify-content:center;
