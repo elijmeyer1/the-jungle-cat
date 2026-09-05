@@ -219,7 +219,7 @@
     nav.open .nav-gallery{display:inline-block;}
     nav.open .nav-gallery-text{display:none;}
     nav.open .nav-gallery-leaf{
-      display:block; height:clamp(85px, 29vw, 112px); width:auto; max-width:92%; margin:0 auto;
+      display:block; height:clamp(102px, 35vw, 134px); width:auto; max-width:92%; margin:0 auto;
       opacity:0; animation:navLeafFadeIn 1.2s ease forwards;
     }
     @keyframes navLeafFadeIn{
