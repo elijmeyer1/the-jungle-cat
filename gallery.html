@@ -74,7 +74,7 @@
   const toggle = document.getElementById('navToggle');
   const nav = document.getElementById('mainNav');
   toggle.addEventListener('click', () => nav.classList.toggle('open'));
-  document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => setTimeout(() => nav.classList.remove('open'), 0)));
 
   // ===== GALLERY IMAGES =====
   // Add the filenames of images placed in images/gallery/ to this list
