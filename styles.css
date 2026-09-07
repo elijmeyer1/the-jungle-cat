@@ -263,10 +263,11 @@
   @media(max-width:560px){
     .footer-grid{
       grid-template-columns:1fr;
-      grid-template-areas:"logo" "quicklinks" "follow" "badge";
+      grid-template-areas:"logo" "quicklinks" "social";
     }
     .footer-logo-col{margin-top:0;}
-    .badge{justify-self:start; margin-top:20px;}
+    .footer-follow-col{grid-area:social; max-width:calc(100% - 120px);}
+    .badge{grid-area:social; justify-self:end; align-self:start; margin-top:34px;}
     .gallery{grid-template-columns:1fr;}
     .gallery-item{min-height:auto; aspect-ratio:4/3;}
     .gallery-item-mobile-only{display:block;}
