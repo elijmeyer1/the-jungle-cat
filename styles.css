@@ -197,11 +197,13 @@
     border-bottom:1px solid rgba(242,237,226,0.14);
   }
   footer .logo .brand-sub{color:var(--cream);}
+  .badge{align-self:end;}
   .footer-col h5{font-size:0.7rem; letter-spacing:0.16em; opacity:0.6; margin-bottom:16px; font-weight:400;}
   .footer-col a, .footer-col p{
     display:block; font-size:0.85rem; font-weight:300; opacity:0.85; margin-bottom:10px; line-height:1.6;
   }
   .footer-col a{font-size:1rem;}
+  .footer-col > a{font-weight:700;}
   .socials{display:flex; align-items:center; gap:12px; margin-top:14px;}
   .socials a{
     width:34px; height:34px; border:1px solid rgba(242,237,226,0.35); border-radius:50%;
@@ -247,12 +249,24 @@
     .welcome{grid-template-columns:1fr;}
     .welcome-text{padding:56px 30px;}
     .gallery-item{min-height:180px;}
-    .footer-grid{grid-template-columns:1fr 1fr; padding-bottom:0;}
-    .footer-grid > *:nth-child(4){grid-column:span 2; margin-top:20px;}
+    .footer-grid{
+      grid-template-columns:1fr 1fr;
+      grid-template-areas:"quicklinks logo" "follow badge";
+      padding-bottom:0;
+    }
+    .footer-quicklinks-col{grid-area:quicklinks;}
+    .footer-follow-col{grid-area:follow;}
+    .footer-logo-col{grid-area:logo;}
+    .badge{grid-area:badge; margin-top:0; justify-self:end; align-self:end;}
     .footer-bottom{flex-direction:column; gap:8px; text-align:center;}
   }
   @media(max-width:560px){
-    .footer-grid{grid-template-columns:1fr;}
+    .footer-grid{
+      grid-template-columns:1fr;
+      grid-template-areas:"logo" "quicklinks" "follow" "badge";
+    }
+    .footer-logo-col{margin-top:0;}
+    .badge{justify-self:start; margin-top:20px;}
     .gallery{grid-template-columns:1fr;}
     .gallery-item{min-height:auto; aspect-ratio:4/3;}
     .gallery-item-mobile-only{display:block;}
