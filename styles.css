@@ -361,6 +361,7 @@
     padding:28px;
     box-shadow:0 25px 70px rgba(0,0,0,0.4);
   }
+  #search-widget_IO312PWQ .cities-dropdown{display:none;}
   @media(max-width:560px){
     .booking-widget-wrap{padding:20px 16px; border-radius:10px;}
     .booking-main{padding:40px 20px 70px; gap:28px;}
