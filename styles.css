@@ -209,7 +209,7 @@
     .footer-quicklinks-col{text-align:center;}
     .footer-gallery-link{display:inline-block; margin-bottom:0;}
     .footer-gallery-text{display:none;}
-    .footer-gallery-leaf{display:block; height:60px; width:auto; margin:0 auto;}
+    .footer-gallery-leaf{display:block; height:60px; width:auto; margin:0 auto; transform:translateX(-10px);}
   }
   .socials{display:flex; align-items:center; gap:12px; margin-top:14px;}
   .socials a{
